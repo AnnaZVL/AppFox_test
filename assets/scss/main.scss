@@ -1,0 +1,27 @@
+@use '~/assets/scss/_variables.scss';
+
+body {    
+    background-color: $color_bg;
+    color: $color_text;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    width: 100%;
+    object-fit: cover;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    margin: 0 auto;    
+    height: 100%;
+    font-weight: normal;
+    font-size: 16px;
+}
