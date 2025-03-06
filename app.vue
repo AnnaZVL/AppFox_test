@@ -5,7 +5,7 @@ const stateStore = useStateStore();
 
 onMounted(async () => { 
   await stateStore.getData();
-  stateStore.getFromLocalStoradge();
+  
 })
 </script>
 <template>

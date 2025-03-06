@@ -1,9 +1,23 @@
 @use '~/assets/scss/_variables.scss';
 
+html {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+*, ::after, ::before {
+    box-sizing: inherit;
+}
+
 body {    
     background-color: $color_bg;
     color: $color_text;
 
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    padding: 0;
 }
 
 a {
@@ -16,6 +30,8 @@ img {
 }
 
 ul {
+    padding: 0;
+    margin: 0;
     list-style: none;
 }
 

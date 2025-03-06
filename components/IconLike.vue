@@ -1,8 +1,8 @@
 <script setup lang="ts">
 import { useStateStore } from '~/store';
-import  type  {Breed } from '~/store';
+import type { Breed } from '~/store';
 
-const stateStore = useStateStore()
+const stateStore = useStateStore();
 
 interface Props {
     color?: string;
@@ -12,11 +12,11 @@ interface Props {
 
 const { width = 16, height = 14 } = defineProps<Props>();
 
-const color = computed(() => {
-    const hasFavourite = stateStore.breads.some((breed: Breed) => breed.isfavourit)
-    
-    return hasFavourite ? '#fff' : '#626262'
-})
+// const color = computed(() => {
+//     const hasFavourite = stateStore.breeds.some((breed: Breed) => breed.isFavourit);
+
+//     return hasFavourite ? '#fff' : '#626262';
+// });
 </script>
 
 <template>
